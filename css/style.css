@@ -91,9 +91,6 @@ ul li a {
   font-weight: 400;
 }
 
-
-
-
 @media (max-width: 600px) {
   body {
     background-color: #292738;
@@ -101,7 +98,7 @@ ul li a {
 
   #profile {
     top: 40px;
-    left: 25%;
+    left: 29%;
     align-items: center;
   }
 
