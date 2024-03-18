@@ -88,9 +88,11 @@ p {
   }
 
   .texto {
+    margin-bottom: 15px;
     width: 80%;
     left: 10%;
     margin-top: 250px;
+    text-align: center;
   }
 
   img {
