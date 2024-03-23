@@ -30,6 +30,23 @@ body {
   border-radius: 50%;
 }
 
+.opcoes ul{
+  display: flex;
+  float: right;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.opcoes li a {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+  padding-right: 3.0rem;
+}
+
 .texto {
   color: white;
   width: 606px;
@@ -45,33 +62,32 @@ h2 {
   margin-bottom: 9px;
 }
 
-p {
+.texto p {
   font-weight: 600;
   font-style: normal;
 }
 
-h1 {
+.texto h1 {
   font-weight: 700;
   font-style: normal;
 }
 
-h2 {
+.texto h2 {
   font-weight: 300;
   font-style: normal;
 }
 
-img {
+.texto img {
   width: 80px;
 }
 
-img,
-p {
+.texto img, p {
   margin-bottom: 3px;
   display: inline-block;
   align-items: center;
 }
 
-ul {
+.texto ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -79,7 +95,7 @@ ul {
   padding: 24px 0;
 }
 
-ul li a {
+.texto ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
