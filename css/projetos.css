@@ -67,7 +67,7 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1280px) {
   body {
     background-color: #292738;
   }
