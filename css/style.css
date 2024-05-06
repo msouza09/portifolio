@@ -97,9 +97,10 @@ h2 {
 
 .btn-light {
   display: flex;
+  height: 60px;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background-color: transparent;
 }
@@ -109,12 +110,21 @@ h2 {
   border: 2px solid rgba(0, 0, 0, 0.2)
 }
 
+.btn-light:active, .btn-light:focus {
+  background-color: transparent !important; 
+}
+
 .btn-light a {
-  overflow: hidden;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
   color: white;
-  font-weight: 400;
-  font-size: 22px;
+  text-decoration: none;
+}
+
+.btn-light ion-icon {
+  margin-right: 8px;
+  font-size: 25px;
 }
 
 @media (max-width: 600px) {
