@@ -112,7 +112,7 @@ h2 {
   background-color: transparent !important; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   body {
     background-color: #292738;
   }
