@@ -84,6 +84,7 @@ ion-icon, .bi{
     display: flex;
     flex-direction: column;
     align-items: center;
+    word-wrap: break-word;
   }
   .container h1 {
     text-align: center;
