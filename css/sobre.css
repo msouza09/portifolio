@@ -65,7 +65,7 @@ ion-icon, .bi{
   vertical-align: middle;
 }
 
-@media (min-width: 300px) and (max-width: 767.98px) {
+@media (min-width: 300px) and (max-width: 1200px) {
 
   * {
       margin: 0;
@@ -98,4 +98,9 @@ ion-icon, .bi{
     padding-bottom: 10px;
     line-height: 1.8;
   }
+  ion-icon, .bi{
+  background-color: #353247;
+  font-size: 3.7rem;
+  vertical-align: middle;
+}
 }
