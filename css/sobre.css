@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #292738;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: space-evenly; 
+  align-items: center; 
+  background-color: #353247;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 16px;
+  padding: 0.125rem 5rem; 
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  background-color: #353247;
+  color: #FFFFFF;
+}
+
+.container p {
+  gap: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  background-color: #353247;
+  color: #FFFFFF;
+}
+
+.icones {
+  display: flex;
+  padding: 11px 33px;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+  background-color: #353247;
+  color: #FFFFFF;
+}
+
+ion-icon, .bi{
+  background-color: #353247;
+  font-size: 4rem;
+  vertical-align: middle;
+}
