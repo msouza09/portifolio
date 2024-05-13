@@ -15,7 +15,19 @@ body {
   font-size: 1.6rem;
 }
 
-#profile {
+.nav-link {
+  color: #FFFFFF;
+}
+
+.nav-link:active {
+  background-color: transparent;
+}
+
+.nav-link:hover {
+  color: #9b9b9b;
+}
+
+header #profile {
   position: absolute;
   top: 30%;
   left: 60%;
@@ -114,15 +126,6 @@ h2 {
   color: white;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navbar a {
-  color: white;
-}
-
 @media (max-width: 1280px) {
   body {
     background-color: #292738;
@@ -148,15 +151,6 @@ h2 {
 
   img {
     width: 60px;
-  }
-
-  .navbar {
-  display: flex;
-  justify-content: center;
-}
-
-  .navbar a {
-    color: white;
   }
 
 }

@@ -104,4 +104,17 @@ ion-icon, .bi{
   font-size: 3.7rem;
   vertical-align: middle;
 }
+
+  .nav-toggler {
+    display: block;
+}
+
+  .nav-link {
+    color: #FFFFFF;
+  }
+
+  .nav-link:hover {
+    color: #9b9b9b;
+    background-color: transparent;
+  }
 }
