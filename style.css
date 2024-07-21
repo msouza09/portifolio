@@ -68,3 +68,15 @@ body {
     border-color: rgba(0, 0, 0, 0.5);
   }
   
+.skills {
+    width: 60rem;
+    height: 25rem;
+    border: 1px solid red;
+}
+
+.col h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
