@@ -1,0 +1,59 @@
+* {
+    background-color: #292738;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid green;
+    width: 70rem;
+    height: 35rem;
+    overflow: hidden;
+}
+
+.col {
+    color: #FFF;
+    font-family: Inter;
+    padding: 5rem;
+}
+
+.col h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.col h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.col p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; 
+}
+
+.image {
+    padding-left: 47rem;  
+}
+
+.botoes-link {
+    padding: 2rem;
+}
+
+.btn-outline-light {
+    border-radius: 10px;
+}
+
+.btn-outline-light:hover {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+  }
+  
