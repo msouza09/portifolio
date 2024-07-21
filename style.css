@@ -48,12 +48,12 @@
 
 .btn-outline-light {
     border-radius: 10px;
-    padding: 16px 24px;
+    padding: 14px 20px;
 }
 
 .btn-outline-light:hover {
     color: inherit;
-    background-color: inherit;
+    background-color: #353247;
     border-color: rgba(0, 0, 0, 0.5);
   }
   
