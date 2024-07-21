@@ -1,14 +1,23 @@
 * {
-    background-color: #292738;
     margin: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #292738;
 }
 
 .container {
-    display: flex;
     border-radius: 20px;
     overflow: hidden;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.3);
     width: 80rem;
     height: 40rem;
+}
+
+.section {
+    padding: 4rem 0;
+    margin-bottom: 10rem;
 }
 
 .col {
