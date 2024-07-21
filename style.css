@@ -6,10 +6,9 @@
 .container {
     display: flex;
     border-radius: 20px;
-    border: 1px solid green;
+    overflow: hidden;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.3);
     width: 70rem;
     height: 35rem;
-    overflow: hidden;
 }
 
 .col {
@@ -54,6 +53,6 @@
 .btn-outline-light:hover {
     color: inherit;
     background-color: inherit;
-    border-color: inherit;
+    border-color: rgba(0, 0, 0, 0.5);
   }
   
