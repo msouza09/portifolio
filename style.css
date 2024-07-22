@@ -80,13 +80,13 @@ body {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .icon-wrapper {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 10rem;
-    height: 10rem;
+    width: 8.8rem;
+    height: 8.8rem;
     padding: 10px;
     display: flex;
     justify-content: center;
