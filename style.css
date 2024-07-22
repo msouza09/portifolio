@@ -116,3 +116,26 @@ body {
 .icon-wrapper:hover i {
     color: #353247; 
 }
+
+.project {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.project .figure {
+    margin: 1.6rem;
+    padding: 16px 16px;
+    border-radius: 20px;
+    background-color: #353247;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.figure figcaption {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
