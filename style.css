@@ -80,13 +80,13 @@ body {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .icon-wrapper {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 10rem;
-    height: 10rem;
+    width: 8.8rem;
+    height: 8.8rem;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -115,4 +115,36 @@ body {
 
 .icon-wrapper:hover i {
     color: #353247; 
+}
+
+.project {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.project .figure {
+    margin: 1.6rem;
+    padding: 16px 16px;
+    border-radius: 20px;
+    background-color: #353247;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project .figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.figure figcaption {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
 }
