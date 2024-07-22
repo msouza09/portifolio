@@ -84,7 +84,7 @@ body {
 }
 
 .icon-wrapper {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     width: 10rem; 
     height: 10rem; 
     padding: 10px; 
