@@ -149,3 +149,27 @@ body {
     line-height: 24px;
 }
 
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+        width: 50rem;
+        height: 70rem;
+    } 
+
+    .col-sm h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .col-sm h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .col-sm p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+}
