@@ -151,16 +151,16 @@ body {
 
 @media (max-width: 575.98px) {
     .container {
+        display: flex;
         max-width: 100%;
         width: 50rem;
         height: 65rem;
-
     } 
-
+    
     .col-sm h1 {
         font-size: 18px;
         text-align: center;
-        line-height: 3rem;
+        line-height: 2.0;
     }
     
     .col-sm h2 {
