@@ -153,8 +153,8 @@ body {
     .container {
         display: flex;
         max-width: 100%;
-        width: 50rem;
-        height: 65rem;
+        width: 30rem;
+        height: 60rem;
     } 
     
     .col-sm h1 {
@@ -168,6 +168,12 @@ body {
         text-align: center;
         line-height: 1.4;
     }
+
+    .col-sm h3 {
+        font-size: 46px;
+        text-align: center;
+        /* line-height: 1.4;  */
+    }
     
     .col-sm p {
         font-size: 16px;
@@ -180,6 +186,13 @@ body {
         height: auto;
         margin-bottom: 1rem;
     }
-    
 
+    .icon-wrapper {
+        display: flex;
+        position: relative; 
+        width: 6.6rem;
+        height: 6.6rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
 }
