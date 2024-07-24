@@ -1,11 +1,54 @@
+:root {
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --container-background: #F5F5F5;
+    --button-text-color: #000000;
+    --button-border-color: #000000;
+    --button-hover-text-color: #FFFFFF;
+    --button-hover-background: #000000;
+    --button-hover-border: #000000;
+    --icon-background: #FFFFFF;
+    --icon-color: #000000;
+    --icon-hover-color: #FFFFFF;
+    --project-background: #FFFFFF; 
+    --project-text: #000000; 
+    --navbar-text-color: #000000; 
+}
+
+body.dark-theme {
+    --background-color: #353247;
+    --text-color: #FFF;
+    --container-background: #353247;
+    --button-text-color: #fff;
+    --button-border-color: #fff;
+    --button-hover-text-color: inherit;
+    --button-hover-background: #353247;
+    --button-hover-border: rgba(0, 0, 0, 0.5);
+    --icon-background: #353247;
+    --icon-color: #FFF;
+    --icon-hover-color: #353247;
+    --project-background: #353247;
+    --project-text: #FFFFFF;
+    --navbar-text-color: #FFFFFF; 
+}
+
 * {
     margin: 0;
     scroll-behavior: smooth;
-
 }
 
 body {
-    background-color: #292738;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.navbar .nav-link {
+    color: var(--navbar-text-color) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='var(--navbar-text-color)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 .container {
@@ -14,6 +57,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.3);
     width: 80rem;
     height: 40rem;
+    background-color: var(--container-background);
 }
 
 .section {
@@ -22,7 +66,7 @@ body {
 }
 
 .col-lg {
-    color: #FFF;
+    color: var(--text-color);
     font-family: Inter;
     padding: 5rem;
 }
@@ -32,24 +76,24 @@ body {
     width: 20rem;
 }
 
+.col-lg h1, .col-lg h2, .col-lg h3, .col-lg p {
+    font-style: normal;
+}
 
 .col-lg h1 {
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 56px;
 }
 
 .col-lg h2 {
     font-size: 30px;
-    font-style: normal;
     font-weight: 700;
     line-height: 56px;
 }
 
 .col-lg p {
     font-size: 16px;
-    font-style: normal;
     font-weight: 300;
     line-height: 20px; 
 }
@@ -61,18 +105,18 @@ body {
 .btn-outline-light {
     border-radius: 10px;
     padding: 14px 20px;
+    color: var(--button-text-color);
+    border: 2px solid var(--button-border-color);
 }
 
 .btn-outline-light:hover {
-    color: inherit;
-    background-color: #353247;
-    border-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  
-  .col-lg h3 {
+    color: var(--button-hover-text-color);
+    background-color: var(--button-hover-background);
+    border-color: var(--button-hover-border);
+}
+
+.col-lg h3 {
     font-size: 50px;
-    font-style: normal;
     font-weight: 700;
     line-height: 56px;
 }
@@ -94,10 +138,12 @@ body {
     margin: 1.5rem;
     border-radius: 5px;
     position: relative; 
+    background-color: var(--icon-background);
 }
 
 .icon-wrapper i {
     font-size: 5em;
+    color: var(--icon-color);
 }
 
 .icon-wrapper:hover::after {
@@ -114,7 +160,7 @@ body {
 }
 
 .icon-wrapper:hover i {
-    color: #353247; 
+    color: var(--icon-hover-color); 
 }
 
 .project {
@@ -126,10 +172,12 @@ body {
     margin: 1.6rem;
     padding: 16px 16px;
     border-radius: 20px;
-    background-color: #353247;
+    background-color: var(--project-background);
+    color: var(--project-text); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .project .figure:hover {
     transform: scale(1.05);
@@ -141,13 +189,23 @@ body {
 }
 
 .figure figcaption {
-    color: #FFFFFF;
+    color: var(--text-color)!important;
     font-family: Inter;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px;
 }
+
+.figure-img {
+    box-shadow: 0 8px 16px rgba(26, 25, 25, 0.7);
+}
+
+.figure-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(36, 36, 36, 0.7);
+}
+
+
 
 @media (max-width: 575.98px) {
     .container {
@@ -194,4 +252,25 @@ body {
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
+}
+
+
+#toggle-theme-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1000; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#toggle-theme-btn i {
+    font-size: 1.5rem;
+    color: #000;
 }
