@@ -189,7 +189,7 @@ body {
 }
 
 .figure figcaption {
-    color: #FFFFFF;
+    color: var(--text-color)!important;
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
