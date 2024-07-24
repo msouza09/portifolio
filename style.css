@@ -220,9 +220,6 @@ body {
     color: #000;
 }
 
-
-
-
 :root {
     --background-color: #FFFFFF;
     --text-color: #000000;
@@ -237,14 +234,15 @@ body {
     --icon-hover-color: #FFFFFF;
     --project-background: #000000;
     --project-text: #FFFFFF;
+    --navbar-text-color: #000000; /* Navbar text color for light theme */
 }
 
 body.dark-theme {
     --background-color: #353247;
     --text-color: #FFF;
     --container-background: #353247;
-    --button-text-color: inherit;
-    --button-border-color: rgba(0, 0, 0, 0.5);
+    --button-text-color: #fff;
+    --button-border-color: #fff;
     --button-hover-text-color: inherit;
     --button-hover-background: #353247;
     --button-hover-border: rgba(0, 0, 0, 0.5);
@@ -253,4 +251,14 @@ body.dark-theme {
     --icon-hover-color: #353247;
     --project-background: #353247;
     --project-text: #FFFFFF;
+    --navbar-text-color: #FFFFFF; /* Navbar text color for dark theme */
+}
+
+/* Navbar styles */
+.navbar .nav-link {
+    color: var(--navbar-text-color) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='var(--navbar-text-color)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
