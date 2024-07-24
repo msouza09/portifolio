@@ -196,6 +196,17 @@ body {
     line-height: 24px;
 }
 
+.figure-img {
+    box-shadow: 0 8px 16px rgba(26, 25, 25, 0.7);
+}
+
+.figure-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(36, 36, 36, 0.7);
+}
+
+
+
 @media (max-width: 575.98px) {
     .container {
         display: flex;
