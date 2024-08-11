@@ -43,6 +43,14 @@ body {
 }
 
 
+.image img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 1rem;
+    width: 18rem;
+    height: auto;
+}
+
 .navbar .nav-link {
     color: var(--navbar-text-color) !important;
 }
@@ -69,11 +77,6 @@ body {
     color: var(--text-color);
     font-family: Inter;
     padding: 5rem;
-}
-
-.image img {
-    margin-left: 3rem;
-    width: 20rem;
 }
 
 .col-lg h1, .col-lg h2, .col-lg h3, .col-lg p {
@@ -178,7 +181,6 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
 .project .figure:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
@@ -233,6 +235,15 @@ body {
         width: 30rem;
         height: 60rem;
     } 
+
+    .image img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 1rem;
+        margin-right: 2rem;
+        width: auto;
+        height: auto;
+    }
     
     .col-sm h1 {
         font-size: 18px;
@@ -254,13 +265,6 @@ body {
     .col-sm p {
         font-size: 16px;
         text-align: center;
-    }
-
-    .image img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 1rem;
     }
 
     .icon-wrapper {
@@ -314,4 +318,13 @@ body {
         top: 8px; /* Linha inferior */
     }
     
+}
+
+@media (max-width: 780px) {
+    .container {
+        display: flex;
+        max-width: 100%;
+        width: 50rem;
+        height: 45rem;
+    } 
 }
