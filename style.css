@@ -205,6 +205,25 @@ body {
     box-shadow: 0 8px 16px rgba(36, 36, 36, 0.7);
 }
 
+#toggle-theme-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1000; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#toggle-theme-btn i {
+    font-size: 1.5rem;
+    color: #000;
+}
 
 
 @media (max-width: 575.98px) {
@@ -252,25 +271,47 @@ body {
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
-}
 
+    #toggle-theme-btn {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.2rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: fixed !important;
+        bottom: 1rem !important;
+        right: 1rem !important;
+        z-index: 1000 !important;
+        background-color: #fff !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important;
+    }
 
-#toggle-theme-btn {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    z-index: 1000; 
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-#toggle-theme-btn i {
-    font-size: 1.5rem;
-    color: #000;
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 24px;
+        height: 2px;
+        background-color: var(--navbar-text-color);
+        position: relative;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: var(--navbar-text-color); /* Cor das linhas */
+        position: absolute;
+        left: 0;
+    }
+    
+    .navbar-toggler-icon::before {
+        top: -8px; /* Linha superior */
+    }
+    
+    .navbar-toggler-icon::after {
+        top: 8px; /* Linha inferior */
+    }
+    
 }
